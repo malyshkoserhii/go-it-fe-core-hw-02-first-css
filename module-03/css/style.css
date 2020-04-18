@@ -6,7 +6,7 @@ body {
 
 .container {
   width: 900px;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 .blog {
@@ -32,9 +32,10 @@ body {
 .page-header {
   padding-top: 71px;
   padding-bottom: 98px;
-  padding-left: 164px;
-  padding-right: 164px;
+  padding-left: 0px;
+  padding-right: 0px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .menu {
@@ -43,16 +44,24 @@ body {
   padding: 0px;
 }
 
-.menu-item-lifestyle {
+.menu li:first-of-type {
   margin-right: 120px;
 }
 
-.menu-item-photodiary {
+.menu li:nth-of-type(2) {
   margin-right: 103px;
 }
 
-.menu-item-music {
+.menu li:nth-of-type(3) {
   margin-right: 95px;
+}
+
+.menu li:last-child {
+  margin-right: 0px;
+}
+
+.menu li:last-of-type {
+  margin-right: 0px;
 }
 
 .menu a:hover,
@@ -63,10 +72,6 @@ body {
 .menu li {
   display: inline-block;
   font-size: 14px;
-}
-
-.menu li:last-child {
-  margin-right: 0px;
 }
 
 .menu a {
@@ -106,10 +111,10 @@ img {
 
 .button-load-more {
   display: block;
-  border: 2px solid #818181;
-  box-sizing: content-box;
-  margin: 0 auto;
-  padding: 20px 33px 20px 34px;
+  border: 1px solid #626262;
+  box-sizing: border-box;
+  margin: 0px auto;
+  padding: 20px 33px 20px 33px;
   min-width: 163px;
   height: 60px;
   font-size: 20px;
